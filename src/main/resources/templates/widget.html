@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>widget</title>
+</head>
+<body>
+
+<table>
+    <tr th:each="widget : ${widgets}">
+        <td th:text="${widget.name}"></td>
+        <td th:text="${widget.version}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
